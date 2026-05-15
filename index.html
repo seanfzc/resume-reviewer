@@ -21,6 +21,8 @@
         .features li { padding: 0.5rem 0; }
         .features li::before { content: '✓ '; color: #667eea; }
         .btn { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; padding: 0.75rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; width: 100%; text-align: center; margin-top: auto; }
+        .btn-kofi { display: inline-block; background: #13aa52; color: #fff; padding: 0.75rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; width: 100%; text-align: center; }
+        .btn-kofi:hover { opacity: 0.9; }
         .btn:hover { opacity: 0.9; }
         .how-it-works { margin: 3rem 0; }
         .step { display: flex; gap: 1rem; margin: 1.5rem 0; }
@@ -39,6 +41,10 @@
         footer { text-align: center; color: #555; margin-top: 4rem; font-size: 0.875rem; }
         footer a { color: #555; }
         .badge-paynow { display: inline-block; background: #28a745; color: #fff; padding: 2px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; letter-spacing: 1px; margin-bottom: 0.75rem; }
+        .divider { display: flex; align-items: center; text-align: center; margin: 1rem 0; color: #555; font-size: 0.8rem; }
+        .divider::before, .divider::after { content: ''; flex: 1; border-bottom: 1px solid #2a2a2a; }
+        .divider:not(:empty)::before { margin-right: 1em; }
+        .divider:not(:empty)::after { margin-left: 1em; }
     </style>
 </head>
 <body>
@@ -56,8 +62,10 @@
                     <li>5 bullet point rewrites</li>
                     <li>24h turnaround</li>
                 </ul>
+                <a href="https://ko-fi.com/s/45ea597dba" class="btn-kofi" style="margin-top:0.5rem;">☕ Buy on Ko-fi</a>
+                <div class="divider">or</div>
                 <span class="badge-paynow">PAYNOW</span>
-                <p style="color:#888;font-size:0.85rem;margin-top:0.25rem;">Scan QR below to pay</p>
+                <p style="color:#888;font-size:0.75rem;margin-top:0.15rem;">Scan QR below to pay</p>
             </div>
             <div class="card featured">
                 <h3>Resume + LinkedIn</h3>
@@ -68,8 +76,10 @@
                     <li>15 bullet point rewrites</li>
                     <li>ATS-optimized formatting guide</li>
                 </ul>
+                <a href="https://ko-fi.com/s/08c1be2bc9" class="btn-kofi" style="margin-top:0.5rem;">☕ Buy on Ko-fi</a>
+                <div class="divider">or</div>
                 <span class="badge-paynow">PAYNOW</span>
-                <p style="color:#888;font-size:0.85rem;margin-top:0.25rem;">Scan QR below to pay</p>
+                <p style="color:#888;font-size:0.75rem;margin-top:0.15rem;">Scan QR below to pay</p>
             </div>
         </div>
 
@@ -86,7 +96,7 @@
                 <div class="step-num">1</div>
                 <div>
                     <h3>Pay & submit</h3>
-                    <p>Scan the PayNow QR above, then email your resume (PDF/DOCX) and target job description to <strong style="color:#667eea;">seanfzc@gmail.com</strong>. Include your payment reference number.</p>
+                    <p>Buy via Ko-fi (global) or scan the PayNow QR above (Singapore), then email your resume and target job description to <strong style="color:#667eea;">seanfzc@gmail.com</strong>. Include your payment reference.</p>
                 </div>
             </div>
             <div class="step">
@@ -114,7 +124,7 @@
         </div>
 
         <div style="text-align:center;color:#555;margin:2rem 0;font-size:0.8rem;">
-            PayNow accepted · Stripe live coming soon with UEN · 24h turnaround · keplerian37.gumroad.com also available
+            PayNow accepted · <a href="https://ko-fi.com/1571keplerjgmailcom/shop" style="color:#13aa52;">Ko-fi shop</a> (global) · Stripe live coming soon with UEN · 24h turnaround
         </div>
 
         <footer>
