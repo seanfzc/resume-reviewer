@@ -12,30 +12,28 @@
         h1 span { background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .subtitle { font-size: 1.2rem; color: #888; margin-bottom: 2rem; }
         .pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0 3rem; }
-        .card { background: #1a1a1a; border-radius: 12px; padding: 2rem; border: 1px solid #2a2a2a; }
+        .card { background: #1a1a1a; border-radius: 12px; padding: 2rem; border: 1px solid #2a2a2a; display: flex; flex-direction: column; }
         .card.featured { border-color: #667eea; position: relative; }
         .card.featured::before { content: 'BEST VALUE'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #667eea; color: #fff; padding: 2px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; }
         .price { font-size: 2rem; font-weight: 700; color: #fff; margin: 0.5rem 0; }
         .price span { font-size: 1rem; color: #888; font-weight: 400; }
-        .features { list-style: none; margin: 1.5rem 0; }
+        .features { list-style: none; margin: 1.5rem 0; flex-grow: 1; }
         .features li { padding: 0.5rem 0; }
         .features li::before { content: '✓ '; color: #667eea; }
+        .btn { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; padding: 0.75rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; width: 100%; text-align: center; margin-top: auto; }
+        .btn:hover { opacity: 0.9; }
         .how-it-works { margin: 3rem 0; }
         .step { display: flex; gap: 1rem; margin: 1.5rem 0; }
         .step-num { width: 40px; height: 40px; background: #1a1a1a; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #667eea; flex-shrink: 0; border: 1px solid #2a2a2a; }
         .step h3 { margin-bottom: 0.25rem; color: #fff; }
         .step p { color: #888; }
-        .contact { background: #1a1a1a; border-radius: 12px; padding: 2rem; border: 1px solid #2a2a2a; margin: 3rem 0; }
-        .contact h2 { color: #fff; margin-bottom: 0.75rem; }
-        .contact p { color: #888; margin-bottom: 1.5rem; }
-        .email { color: #667eea; font-weight: 600; font-size: 1.2rem; word-break: break-all; }
-        .email a { color: #667eea; text-decoration: none; }
-        .email a:hover { text-decoration: underline; }
-        .tag { display: inline-block; background: #667eea22; color: #667eea; padding: 2px 12px; border-radius: 20px; font-size: 0.8rem; border: 1px solid #667eea44; margin: 0.25rem; }
-        footer { text-align: center; color: #555; margin-top: 4rem; font-size: 0.875rem; }
         .sample { margin: 2rem 0; padding: 1.5rem; background: #1a1a1a; border-radius: 12px; border: 1px solid #2a2a2a; }
         .sample h3 { color: #fff; margin-bottom: 0.75rem; }
-        .sample p { color: #888; font-size: 0.9rem; }
+        .sample p { color: #888; font-size: 0.9rem; margin: 0.5rem 0; }
+        .badge { display: inline-block; background: #667eea22; color: #667eea; padding: 2px 12px; border-radius: 20px; font-size: 0.75rem; border: 1px solid #667eea44; margin: 0.25rem; }
+        footer { text-align: center; color: #555; margin-top: 4rem; font-size: 0.875rem; }
+        footer a { color: #555; }
+        .stripe-badge { text-align: center; margin: 1rem 0; font-size: 0.8rem; color: #555; }
     </style>
 </head>
 <body>
@@ -53,6 +51,7 @@
                     <li>5 bullet point rewrites</li>
                     <li>24h turnaround</li>
                 </ul>
+                <a href="https://buy.stripe.com/test_4gM14p78x7p54xg140eEo00" class="btn">Buy Now — $19</a>
             </div>
             <div class="card featured">
                 <h3>Resume + LinkedIn</h3>
@@ -63,6 +62,7 @@
                     <li>15 bullet point rewrites</li>
                     <li>ATS-optimized formatting guide</li>
                 </ul>
+                <a href="https://buy.stripe.com/test_8x24gB0K9cJp4xg5kgeEo01" class="btn">Buy Now — $39</a>
             </div>
         </div>
 
@@ -71,42 +71,40 @@
             <div class="step">
                 <div class="step-num">1</div>
                 <div>
-                    <h3>Email your resume</h3>
-                    <p>Send your resume (PDF/DOCX) and the job description you're targeting.</p>
+                    <h3>Purchase & submit</h3>
+                    <p>Buy via the link above, then email your resume (PDF/DOCX) and target job description to <strong style="color:#667eea;">seanfzc@gmail.com</strong></p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-num">2</div>
                 <div>
-                    <h3>We analyze it</h3>
-                    <p>Our engine compares your resume against the role and produces a detailed report.</p>
+                    <h3>AI analyzes</h3>
+                    <p>Our engine compares your resume against the role, identifying every keyword gap, format issue, and ATS problem.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-num">3</div>
                 <div>
-                    <h3>Get the report</h3>
-                    <p>Pay by PayPal or bank transfer, get your report with rewritten bullets and recommendations.</p>
+                    <h3>Get your report</h3>
+                    <p>Full written report with rewritten bullet points, keyword recommendations, and actionable improvements — within 24 hours.</p>
                 </div>
             </div>
         </div>
 
         <div class="sample">
-            <h3>What you'll get</h3>
+            <h3>Sample output</h3>
             <p><strong>ATS Score:</strong> 62/100 — below the 75 threshold for this role</p>
-            <p><strong>Keyword Gaps:</strong> "terraform", "kubernetes", "incident response" missing</p>
-            <p><strong>Sample Rewrite:</strong> "Responsible for server management" → "Managed 50+ production servers, reducing incident response time by 40%"</p>
+            <p><strong>Keyword Gaps:</strong> <span class="badge">terraform</span> <span class="badge">kubernetes</span> <span class="badge">incident response</span></p>
+            <p><strong>Rewrite:</strong> "Responsible for server management" → "Managed 50+ production servers, reducing incident response time by 40%"</p>
+            <p><strong>Format Issue:</strong> Skills section uses plain text — ATS parsers prefer comma-separated lists</p>
         </div>
 
-        <div class="contact">
-            <h2>Get your review</h2>
-            <p>Email your resume + target job description to:</p>
-            <p class="email"><a href="mailto:seanfzc@gmail.com?subject=Resume%20Review%20Request&body=Resume%20attached.%20Job%20description%3A%20[paste%20here]">seanfzc@gmail.com</a></p>
-            <p>Include the job description in the email body. I'll reply within 24 hours with your report and payment link.</p>
+        <div class="stripe-badge">
+            Secure payments powered by Stripe · Delivered within 24 hours
         </div>
 
         <footer>
-            <p>Built by Kepler — Revenue Agent · <a href="https://github.com/seanfzc/actions-starter-kit" style="color:#555;">Actions Starter Kit</a></p>
+            <p>Built by Kepler · <a href="https://github.com/seanfzc/actions-starter-kit">Actions Starter Kit</a></p>
         </footer>
     </div>
 </body>
