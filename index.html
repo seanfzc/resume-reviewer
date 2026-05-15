@@ -31,9 +31,14 @@
         .sample h3 { color: #fff; margin-bottom: 0.75rem; }
         .sample p { color: #888; font-size: 0.9rem; margin: 0.5rem 0; }
         .badge { display: inline-block; background: #667eea22; color: #667eea; padding: 2px 12px; border-radius: 20px; font-size: 0.75rem; border: 1px solid #667eea44; margin: 0.25rem; }
+        .paynow-section { text-align: center; margin: 2rem 0; padding: 2rem; background: #1a1a1a; border-radius: 12px; border: 2px dashed #28a745; }
+        .paynow-section h3 { color: #fff; margin-bottom: 0.5rem; }
+        .paynow-section p { color: #888; margin-bottom: 1rem; }
+        .paynow-section img { width: 220px; height: 220px; border-radius: 8px; }
+        .paynow-note { color: #666; font-size: 0.8rem; margin-top: 0.5rem; }
         footer { text-align: center; color: #555; margin-top: 4rem; font-size: 0.875rem; }
         footer a { color: #555; }
-        .stripe-badge { text-align: center; margin: 1rem 0; font-size: 0.8rem; color: #555; }
+        .badge-paynow { display: inline-block; background: #28a745; color: #fff; padding: 2px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; letter-spacing: 1px; margin-bottom: 0.75rem; }
     </style>
 </head>
 <body>
@@ -44,26 +49,35 @@
         <div class="pricing">
             <div class="card">
                 <h3>Single Review</h3>
-                <div class="price">$19 <span>one-time</span></div>
+                <div class="price">$19 <span>SGD — one-time</span></div>
                 <ul class="features">
                     <li>ATS compatibility score</li>
                     <li>Keyword gap analysis</li>
                     <li>5 bullet point rewrites</li>
                     <li>24h turnaround</li>
                 </ul>
-                <a href="https://buy.stripe.com/test_4gM14p78x7p54xg140eEo00" class="btn">Buy Now — $19</a>
+                <span class="badge-paynow">PAYNOW</span>
+                <p style="color:#888;font-size:0.85rem;margin-top:0.25rem;">Scan QR below to pay</p>
             </div>
             <div class="card featured">
                 <h3>Resume + LinkedIn</h3>
-                <div class="price">$39 <span>one-time</span></div>
+                <div class="price">$39 <span>SGD — one-time</span></div>
                 <ul class="features">
                     <li>Everything in Single Review</li>
                     <li>LinkedIn profile analysis</li>
                     <li>15 bullet point rewrites</li>
                     <li>ATS-optimized formatting guide</li>
                 </ul>
-                <a href="https://buy.stripe.com/test_8x24gB0K9cJp4xg5kgeEo01" class="btn">Buy Now — $39</a>
+                <span class="badge-paynow">PAYNOW</span>
+                <p style="color:#888;font-size:0.85rem;margin-top:0.25rem;">Scan QR below to pay</p>
             </div>
+        </div>
+
+        <div class="paynow-section">
+            <h3>Pay via PayNow</h3>
+            <p>Scan the QR with any Singapore banking app. Transfer $19 (Single) or $39 (Premium) — then email your resume to proceed.</p>
+            <img src="paynow-qr.jpg" alt="PayNow QR Code — +65 91550120">
+            <p class="paynow-note">PayNow to <strong>+65 91550120</strong> (FOO ZHICHUAN SEAN) · Instant confirmation</p>
         </div>
 
         <div class="how-it-works">
@@ -71,8 +85,8 @@
             <div class="step">
                 <div class="step-num">1</div>
                 <div>
-                    <h3>Purchase & submit</h3>
-                    <p>Buy via the link above, then email your resume (PDF/DOCX) and target job description to <strong style="color:#667eea;">seanfzc@gmail.com</strong></p>
+                    <h3>Pay & submit</h3>
+                    <p>Scan the PayNow QR above, then email your resume (PDF/DOCX) and target job description to <strong style="color:#667eea;">seanfzc@gmail.com</strong>. Include your payment reference number.</p>
                 </div>
             </div>
             <div class="step">
@@ -99,8 +113,8 @@
             <p><strong>Format Issue:</strong> Skills section uses plain text — ATS parsers prefer comma-separated lists</p>
         </div>
 
-        <div class="stripe-badge">
-            Secure payments powered by Stripe · Delivered within 24 hours
+        <div style="text-align:center;color:#555;margin:2rem 0;font-size:0.8rem;">
+            PayNow accepted · Stripe live coming soon with UEN · 24h turnaround · keplerian37.gumroad.com also available
         </div>
 
         <footer>
