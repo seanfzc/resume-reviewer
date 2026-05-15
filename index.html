@@ -10,7 +10,7 @@
         .container { max-width: 720px; margin: 0 auto; padding: 4rem 2rem; }
         h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: #fff; }
         h1 span { background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .subtitle { font-size: 1.2rem; color: #888; margin-bottom: 3rem; }
+        .subtitle { font-size: 1.2rem; color: #888; margin-bottom: 2rem; }
         .pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0 3rem; }
         .card { background: #1a1a1a; border-radius: 12px; padding: 2rem; border: 1px solid #2a2a2a; }
         .card.featured { border-color: #667eea; position: relative; }
@@ -20,25 +20,28 @@
         .features { list-style: none; margin: 1.5rem 0; }
         .features li { padding: 0.5rem 0; }
         .features li::before { content: '✓ '; color: #667eea; }
-        .btn { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; padding: 0.75rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; width: 100%; text-align: center; }
-        .btn:hover { opacity: 0.9; }
         .how-it-works { margin: 3rem 0; }
         .step { display: flex; gap: 1rem; margin: 1.5rem 0; }
         .step-num { width: 40px; height: 40px; background: #1a1a1a; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #667eea; flex-shrink: 0; border: 1px solid #2a2a2a; }
         .step h3 { margin-bottom: 0.25rem; color: #fff; }
         .step p { color: #888; }
-        .email-form { background: #1a1a1a; border-radius: 12px; padding: 2rem; border: 1px solid #2a2a2a; margin: 3rem 0; }
-        .email-form h2 { margin-bottom: 1rem; color: #fff; }
-        .email-form input, .email-form textarea { width: 100%; padding: 0.75rem; margin: 0.5rem 0; background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 8px; color: #e0e0e0; font-size: 1rem; }
-        .email-form textarea { min-height: 120px; }
-        .email-form .btn { margin-top: 1rem; border: none; cursor: pointer; font-size: 1rem; }
+        .contact { background: #1a1a1a; border-radius: 12px; padding: 2rem; border: 1px solid #2a2a2a; margin: 3rem 0; }
+        .contact h2 { color: #fff; margin-bottom: 0.75rem; }
+        .contact p { color: #888; margin-bottom: 1.5rem; }
+        .email { color: #667eea; font-weight: 600; font-size: 1.2rem; word-break: break-all; }
+        .email a { color: #667eea; text-decoration: none; }
+        .email a:hover { text-decoration: underline; }
+        .tag { display: inline-block; background: #667eea22; color: #667eea; padding: 2px 12px; border-radius: 20px; font-size: 0.8rem; border: 1px solid #667eea44; margin: 0.25rem; }
         footer { text-align: center; color: #555; margin-top: 4rem; font-size: 0.875rem; }
+        .sample { margin: 2rem 0; padding: 1.5rem; background: #1a1a1a; border-radius: 12px; border: 1px solid #2a2a2a; }
+        .sample h3 { color: #fff; margin-bottom: 0.75rem; }
+        .sample p { color: #888; font-size: 0.9rem; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Your resume is <span>costing you interviews</span></h1>
-        <p class="subtitle">Get an AI-powered analysis that finds keyword gaps, ATS issues, and rewrite suggestions — in 24 hours.</p>
+        <p class="subtitle">Get an AI-powered analysis that finds keyword gaps, ATS issues, and specific rewrites — delivered in 24 hours.</p>
 
         <div class="pricing">
             <div class="card">
@@ -50,7 +53,6 @@
                     <li>5 bullet point rewrites</li>
                     <li>24h turnaround</li>
                 </ul>
-                <a href="#" class="btn" onclick="alert('Payments coming soon — email me directly at seanfzc@gmail.com for now')">Order Now</a>
             </div>
             <div class="card featured">
                 <h3>Resume + LinkedIn</h3>
@@ -61,43 +63,50 @@
                     <li>15 bullet point rewrites</li>
                     <li>ATS-optimized formatting guide</li>
                 </ul>
-                <a href="#" class="btn" onclick="alert('Payments coming soon — email me directly at seanfzc@gmail.com for now')">Order Now</a>
             </div>
         </div>
-        
+
         <div class="how-it-works">
             <h2 style="color:#fff; margin-bottom: 1rem;">How it works</h2>
             <div class="step">
                 <div class="step-num">1</div>
                 <div>
-                    <h3>Send your resume</h3>
-                    <p>Email your resume and the job description you're targeting.</p>
+                    <h3>Email your resume</h3>
+                    <p>Send your resume (PDF/DOCX) and the job description you're targeting.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-num">2</div>
                 <div>
-                    <h3>AI analysis</h3>
-                    <p>Our engine compares your resume against the role, finding every gap and opportunity.</p>
+                    <h3>We analyze it</h3>
+                    <p>Our engine compares your resume against the role and produces a detailed report.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-num">3</div>
                 <div>
-                    <h3>Get your report</h3>
-                    <p>Detailed feedback with rewritten bullets, keyword recommendations, and an ATS score.</p>
+                    <h3>Get the report</h3>
+                    <p>Pay by PayPal or bank transfer, get your report with rewritten bullets and recommendations.</p>
                 </div>
             </div>
         </div>
 
-        <div class="email-form">
-            <h2>Get started now</h2>
-            <p style="color:#888; margin-bottom:1rem;">Email your resume to <strong style="color:#667eea;">seanfzc@gmail.com</strong> with the job description and I'll send you a payment link.</p>
-            <p style="color:#888;">Or send a message directly and I'll review within 24 hours.</p>
+        <div class="sample">
+            <h3>What you'll get</h3>
+            <p><strong>ATS Score:</strong> 62/100 — below the 75 threshold for this role</p>
+            <p><strong>Keyword Gaps:</strong> "terraform", "kubernetes", "incident response" missing</p>
+            <p><strong>Sample Rewrite:</strong> "Responsible for server management" → "Managed 50+ production servers, reducing incident response time by 40%"</p>
+        </div>
+
+        <div class="contact">
+            <h2>Get your review</h2>
+            <p>Email your resume + target job description to:</p>
+            <p class="email"><a href="mailto:seanfzc@gmail.com?subject=Resume%20Review%20Request&body=Resume%20attached.%20Job%20description%3A%20[paste%20here]">seanfzc@gmail.com</a></p>
+            <p>Include the job description in the email body. I'll reply within 24 hours with your report and payment link.</p>
         </div>
 
         <footer>
-            <p>Built by Kepler — Revenue Agent of Zero-Human Enterprise</p>
+            <p>Built by Kepler — Revenue Agent · <a href="https://github.com/seanfzc/actions-starter-kit" style="color:#555;">Actions Starter Kit</a></p>
         </footer>
     </div>
 </body>
