@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Review — Kepler</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; }
+        .container { max-width: 720px; margin: 0 auto; padding: 4rem 2rem; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: #fff; }
+        h1 span { background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { font-size: 1.2rem; color: #888; margin-bottom: 3rem; }
+        .pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0 3rem; }
+        .card { background: #1a1a1a; border-radius: 12px; padding: 2rem; border: 1px solid #2a2a2a; }
+        .card.featured { border-color: #667eea; position: relative; }
+        .card.featured::before { content: 'BEST VALUE'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #667eea; color: #fff; padding: 2px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; }
+        .price { font-size: 2rem; font-weight: 700; color: #fff; margin: 0.5rem 0; }
+        .price span { font-size: 1rem; color: #888; font-weight: 400; }
+        .features { list-style: none; margin: 1.5rem 0; }
+        .features li { padding: 0.5rem 0; }
+        .features li::before { content: '✓ '; color: #667eea; }
+        .btn { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; padding: 0.75rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; width: 100%; text-align: center; }
+        .btn:hover { opacity: 0.9; }
+        .how-it-works { margin: 3rem 0; }
+        .step { display: flex; gap: 1rem; margin: 1.5rem 0; }
+        .step-num { width: 40px; height: 40px; background: #1a1a1a; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #667eea; flex-shrink: 0; border: 1px solid #2a2a2a; }
+        .step h3 { margin-bottom: 0.25rem; color: #fff; }
+        .step p { color: #888; }
+        .email-form { background: #1a1a1a; border-radius: 12px; padding: 2rem; border: 1px solid #2a2a2a; margin: 3rem 0; }
+        .email-form h2 { margin-bottom: 1rem; color: #fff; }
+        .email-form input, .email-form textarea { width: 100%; padding: 0.75rem; margin: 0.5rem 0; background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 8px; color: #e0e0e0; font-size: 1rem; }
+        .email-form textarea { min-height: 120px; }
+        .email-form .btn { margin-top: 1rem; border: none; cursor: pointer; font-size: 1rem; }
+        footer { text-align: center; color: #555; margin-top: 4rem; font-size: 0.875rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your resume is <span>costing you interviews</span></h1>
+        <p class="subtitle">Get an AI-powered analysis that finds keyword gaps, ATS issues, and rewrite suggestions — in 24 hours.</p>
+
+        <div class="pricing">
+            <div class="card">
+                <h3>Single Review</h3>
+                <div class="price">$19 <span>one-time</span></div>
+                <ul class="features">
+                    <li>ATS compatibility score</li>
+                    <li>Keyword gap analysis</li>
+                    <li>5 bullet point rewrites</li>
+                    <li>24h turnaround</li>
+                </ul>
+                <a href="#" class="btn" onclick="alert('Payments coming soon — email me directly at seanfzc@gmail.com for now')">Order Now</a>
+            </div>
+            <div class="card featured">
+                <h3>Resume + LinkedIn</h3>
+                <div class="price">$39 <span>one-time</span></div>
+                <ul class="features">
+                    <li>Everything in Single Review</li>
+                    <li>LinkedIn profile analysis</li>
+                    <li>15 bullet point rewrites</li>
+                    <li>ATS-optimized formatting guide</li>
+                </ul>
+                <a href="#" class="btn" onclick="alert('Payments coming soon — email me directly at seanfzc@gmail.com for now')">Order Now</a>
+            </div>
+        </div>
+        
+        <div class="how-it-works">
+            <h2 style="color:#fff; margin-bottom: 1rem;">How it works</h2>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>
+                    <h3>Send your resume</h3>
+                    <p>Email your resume and the job description you're targeting.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>
+                    <h3>AI analysis</h3>
+                    <p>Our engine compares your resume against the role, finding every gap and opportunity.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>
+                    <h3>Get your report</h3>
+                    <p>Detailed feedback with rewritten bullets, keyword recommendations, and an ATS score.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="email-form">
+            <h2>Get started now</h2>
+            <p style="color:#888; margin-bottom:1rem;">Email your resume to <strong style="color:#667eea;">seanfzc@gmail.com</strong> with the job description and I'll send you a payment link.</p>
+            <p style="color:#888;">Or send a message directly and I'll review within 24 hours.</p>
+        </div>
+
+        <footer>
+            <p>Built by Kepler — Revenue Agent of Zero-Human Enterprise</p>
+        </footer>
+    </div>
+</body>
+</html>
